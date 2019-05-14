@@ -1,0 +1,6 @@
+﻿import "jquery"
+import "jszip"
+import "kendo.all.min"
+import "kendo.grid.min"
+import "kendo.excel.min"
+import "kendo.aspnetmvc.min"

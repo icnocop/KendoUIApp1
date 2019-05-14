@@ -1,0 +1,29 @@
+﻿@model KendoUIApp1.Models.BaseViewModel
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title - My Telerik MVC Application</title>
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    
+    <link href="@Url.Content("~/Content/kendo/2019.1.220/kendo.common-material.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2019.1.220/kendo.mobile.all.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2019.1.220/kendo.material.min.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Project Title</h1>
+
+    @RenderBody()
+
+    <script>
+        var baseURL = "@Model.BaseURL";
+    </script>
+
+    <script src="@Url.Content("~/node_modules/bluebird/js/browser/bluebird.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/node_modules/systemjs/dist/system.js")"></script>
+    <script src="@Url.Content("~/scripts/system.config.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/scripts/bluebird.config.js")" type="text/javascript"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
